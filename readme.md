@@ -14,7 +14,8 @@ Current and historical releases are stored in the [data](./data) folder. The mos
 ├── data
 │   ├── COVID_Cases_Restricted_Detailed_05172020.csv.zip            <-315,593 records, 29 fields
 │   └── COVID_Cases_Restricted_Detailed_05292020.csv.zip            <-1,111,017 records, 29 fields
-├── COVID Case Surveillance Data Release Summary_5.18.2020.pdf
+│   └── COVID_Cases_Restricted_Detailed_06272020.csv.zip            <-1,773,087 records, 31 fields
+├── COVID Case Surveillance Data Release Summary_6.27.2020.pdf
 ├── Case Surveillance Data RIDURA between SRRG and non-CDC entity.pdf
 ├── data_dictionary_covid_cases_restricted_detailed.xlsx
 ├── nCoV_PUI_Case_ReportForm_2020Apr13v2.pdf
@@ -24,7 +25,7 @@ Current and historical releases are stored in the [data](./data) folder. The mos
 
 ## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, May 2020 U.S. Centers for Disease Control and Prevention
 
-_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: May 29, 2020)._
+_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: June 27, 2020)._
 
 ## Purpose
 
@@ -43,23 +44,21 @@ The Case Surveillance Task Force and Surveillance Review and Response Group (SRR
 * Data requests will be prioritized based a clear description of the immediate impact for COVID-19 response that is anticipated to follow from data use.
 * Access will be granted to the appropriate single repository containing data files and data dictionary through <https://github.com/cdc-data>
 
-## Data Release Specifications
+## Restricted Data Specifications
 
-Two line-listed (case-specific) datasets of all COVID-19 cases reported to CDC are available. Either dataset, but not both, is to be made available for limited use upon completion of the RIDURA. COVID- 19 data may differ in the variables reported and in completeness by state.
-
-Data by county or any geographic unit smaller than state cannot be released. If the total number of cases in a state in one year is <5 cases, state will be suppressed for all cases in that state.
-
-Dataset 1: _Detailed_ (filename: COVID_Cases_Restricted_Detailed_date.csv) does not include state of residence. Variables:
+A restricted access, detailed version of line-listed dataset of all COVID-19 cases reported to CDC is available. The dataset is to be made available for limited use upon completion of the RIDURA. COVID-19 data may differ substantially in the variables reported and in completeness by state. Some data are suppressed to protect patient privacy by coding as _NA_ (see Data Suppression below). The **restricted access** data set includes the following variables:
 
 * Initial report date of case to CDC
 * Date of first positive specimen collection
+* Symptom onset date, if symptomatic
 * Case status
 * Sex
 * Age group (0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80+ years)
-* Race
-* Ethnicity
+* Race and ethnicity (combined)
+* State of residence
+* County of residence
+* County FIPS code
 * Healthcare worker status
-* Symptom onset date, if symptomatic
 * Pneumonia present
 * Acute respiratory distress syndrome (ARDS) present
 * Abnormal chest x-ray (CXR) present
@@ -69,6 +68,22 @@ Dataset 1: _Detailed_ (filename: COVID_Cases_Restricted_Detailed_date.csv) does 
 * Death status
 * Presence of each of the following symptoms: fever, subjective fever, chills, myalgia, rhinorrhea, sore
 throat, cough, shortness of breath, nausea/vomiting, headache, abdominal pain, diarrhea
+* Presence of underlying comorbidity or disease
+
+## Public Data Specifications
+
+A public version of line-listed dataset of all COVID-19 cases reported to CDC is available at [data.cdc.gov](https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf). Completion of the RIDURA is not required. COVID-19 data may differ substantially in the variables reported and in completeness by state. Some data are suppressed to protect patient privacy by coding as _NA_ (see Data Suppression below). The **public** data set includes the following variables:
+
+* Initial case report date to CDC
+* Date of first positive specimen collection
+* Symptom onset date, if symptomatic
+* Case status
+* Sex
+* Age group (0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80+ years)
+* Race and ethnicity (combined)
+* Hospitalization status
+* ICU admission status
+* Death status
 * Presence of underlying comorbidity or disease
 
 ## Case Data Standardization
@@ -89,7 +104,7 @@ Additional data quality processing to recode free text data are ongoing. Data on
 
 ## Data Suppression
 
-To prevent release of data that could be used to identify persons, data cells are suppressed for low frequency (<5) records. Suppression includes states with low reporting counts and uncommon combinations of demographic characteristics (sex, age group, race/ethnicity). Suppressed values are re-coded to the _Unknown_ answer option.
+To prevent release of data that could be used to identify persons, data cells are suppressed for low frequency (<5) records and indirect identifiers (date of first positive specimen). Suppression includes states and counties with low reporting counts and uncommon combinations of demographic characteristics (sex, age group, race/ethnicity, healthcare worker status). Suppressed values are re-coded to the _NA_ answer option.
 
 ## Dataset Limitations
 
