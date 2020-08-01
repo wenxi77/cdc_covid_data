@@ -4,17 +4,16 @@ This private repository is created to assist qualified researchers in using COVI
 
 You have been granted access to this repository and data contained within this repository after accepting to the RIDURA. Please direct others who would like access to these data toward the [AskSRRG Mailbox](mailto:eocevent394@cdc.gov) so they can request access. Please ask questions to this same mailbox, or by submitting an [Issue on this repository](https://github.com/cdc-data/covid_case_restricted_detail/issues).
 
-This is the detailed version of the restricted case data, a limited version is stored in a separate repository and access is granted to either the detailed version or the limited version, but not both.
-
 ## Project organization
 
-Current and historical releases are stored in the [data](./data) folder. The most recent release is from May.
+Current and historical releases are stored in the [data](./data) folder. The most recent release is from July.
 
 ```bash
 ├── data
 │   ├── COVID_Cases_Restricted_Detailed_05172020.csv.zip            <-315,593 records, 29 fields
-│   └── COVID_Cases_Restricted_Detailed_05292020.csv.zip            <-1,111,017 records, 29 fields
-│   └── COVID_Cases_Restricted_Detailed_06272020.csv.zip            <-1,773,087 records, 31 fields
+│   ├── COVID_Cases_Restricted_Detailed_05292020.csv.zip            <-1,111,017 records, 29 fields
+│   ├── COVID_Cases_Restricted_Detailed_06272020.csv.zip            <-1,773,087 records, 31 fields
+│   └── COVID_Cases_Restricted_Detailed_07312020.csv.zip            <-2,668,175 records, 31 fields
 ├── COVID Case Surveillance Data Release Summary_6.27.2020.pdf
 ├── Case Surveillance Data RIDURA between SRRG and non-CDC entity.pdf
 ├── data_dictionary_covid_cases_restricted_detailed.xlsx
@@ -25,7 +24,7 @@ Current and historical releases are stored in the [data](./data) folder. The mos
 
 ## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, May 2020 U.S. Centers for Disease Control and Prevention
 
-_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: June 27, 2020)._
+_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: July 31, 2020)._
 
 ## Purpose
 
@@ -33,13 +32,13 @@ The purpose of this document is to facilitate proper access, analysis, and inter
 
 ## Introduction
 
-The COVID-19 case surveillance system database includes patient-level data reported to U.S. states and autonomous reporting entities, including New York City and the District of Columbia (D.C.), as well as U.S. territories and states. On April 5, 2020, COVID-19 was added to the _Nationally Notifiable Condition List_ and classified as “immediately notifiable, urgent (within 24 hours)” by a Council of State and Territorial Epidemiologists (CSTE) Interim Position Statement (Interim-20-ID-01). The statement also recommended that all states and territories enact laws to make COVID-19 reportable in their jurisdiction, and that jurisdictions conducting surveillance should submit case notifications to CDC. COVID-19 case surveillance data are collected and reported voluntarily to CDC’s COVID-19 Response. These data include demographic characteristics, exposure history, disease severity indicators and outcomes, clinical data, laboratory diagnostic test results, and comorbidities. All data elements can be found on the COVID-19 case report form located at [www.cdc.gov/coronavirus/2019-ncov/downloads/pui-form.pdf](https://www.cdc.gov/coronavirus/2019-ncov/downloads/pui-form.pdf).
+The COVID-19 case surveillance system database includes patient-level data reported to U.S. states and autonomous reporting entities, including New York City and the District of Columbia (D.C.), as well as U.S. territories and states. On April 5, 2020, COVID-19 was added to the _Nationally Notifiable Condition List_ and classified as "immediately notifiable, urgent (within 24 hours)" by a Council of State and Territorial Epidemiologists (CSTE) Interim Position Statement (Interim-20-ID-01). The statement also recommended that all states and territories enact laws to make COVID-19 reportable in their jurisdiction, and that jurisdictions conducting surveillance should submit case notifications to CDC. COVID-19 case surveillance data are collected and reported voluntarily to CDC's COVID-19 Response. These data include demographic characteristics, exposure history, disease severity indicators and outcomes, clinical data, laboratory diagnostic test results, and comorbidities. All data elements can be found on the COVID-19 case report form located at [www.cdc.gov/coronavirus/2019-ncov/downloads/pui-form.pdf](https://www.cdc.gov/coronavirus/2019-ncov/downloads/pui-form.pdf).
 
 ## Data Access Process
 
 The Case Surveillance Task Force and Surveillance Review and Response Group (SRRG) within CDC’s COVID-19 Response provide stewardship for datasets that support the public health community’s access to COVID-19 data while protecting patient privacy. Data are made available for limited use upon completion of the registration information and data use restrictions agreement (RIDURA).
 
-* To initiate a request, please use the following “ASK SRRG” email address to contact data stewards: eocevent394@cdc.gov.
+* To initiate a request, please use the following "ASK SRRG" email address to contact data stewards: [eocevent394@cdc.gov](mailto:eocevent394@cdc.gov).
 * SRRG will provide further documentation and guidance under the RIDURA to access and use COVID-19 case surveillance data appropriately.
 * Data requests will be prioritized based a clear description of the immediate impact for COVID-19 response that is anticipated to follow from data use.
 * Access will be granted to the appropriate single repository containing data files and data dictionary through <https://github.com/cdc-data>
@@ -94,9 +93,9 @@ COVID-19 case reports have been routinely submitted using standardized case repo
 
 The COVID-19 case surveillance data are dynamic; case reports can be modified at any time by the reporting jurisdiction as new information becomes available (i.e., data are subject to change).  Furthermore, reporting jurisdictions may report cases late. Version updates to the detailed and limited datasets will be available for request once a month. The datasets will include all cases with an initial report date of case to CDC at least 14 days prior to the creation of the previously updated datasets. This month lag will allow adjustments to case reporting and ensure that time-dependent outcome data, including death, are accurately captured. Releases will be managed through github.com and will contain most recent and previous versions (<https://github.com/cdc-data>).
 
-CDC’s Case Surveillance Task Force routinely performs data quality assurance procedures (i.e., ongoing corrections and logic checks to address data errors). To date, the following data cleaning steps __have been__ implemented:
+CDC's Case Surveillance Task Force routinely performs data quality assurance procedures (i.e., ongoing corrections and logic checks to address data errors). To date, the following data cleaning steps __have been__ implemented:
 
-* Questions that have been left unanswered (blank) on the case report form are re-classified to an _Unknown_ value, if applicable to the question. For example, in the question “Was the patient hospitalized?”, where the possible answer choices include “Yes”, “No”, or “Unknown”, the missing value is re-coded to the _Unknown_ answer option if the respondent did not answer the question.
+* Questions that have been left unanswered (blank) on the case report form are re-classified to an _Missing_ value, if applicable to the question. For example, in the question “Was the patient hospitalized?”, where the possible answer choices include "Yes", "No", or "Unknown", the missing value is re-coded to _Missing_ if the respondent did not answer the question.
 * Logic checks are performed for date data. If an illogical date has been provided, CDC reviews the data with the reporting jurisdiction. For example, if a symptom onset date that is in the future is reported to CDC, this value is set to null until the reporting jurisdiction updates this information appropriately.
 * The initial report date of the case to CDC is intended to be completed by the reporting jurisdiction when data are submitted. If blank, this variable is completed using the date the data file was first submitted to CDC.
 
@@ -108,7 +107,7 @@ To prevent release of data that could be used to identify persons, data cells ar
 
 ## Dataset Limitations
 
-The COVID-19 case surveillance system is passive; data underestimate the true numbers of cases because of underdiagnosis or underreporting. Completeness of reporting is influenced by many factors (e.g., availability of diagnostic testing, resources and priorities health officials). Because reporting is voluntary, reporting practices vary by state and also depend on a variety of factors. Differences could exist between state-specific databases and CDC’s COVID-19 surveillance database, though efforts are made to align CDC’s database with state-specific data.
+The COVID-19 case surveillance system is passive; data underestimate the true numbers of cases because of underdiagnosis or underreporting. Completeness of reporting is influenced by many factors (e.g., availability of diagnostic testing, resources and priorities health officials). Because reporting is voluntary, reporting practices vary by state and also depend on a variety of factors. Differences could exist between state-specific databases and CDC's COVID-19 surveillance database, though efforts are made to align CDC's database with state-specific data.
 
 Although the case report form captures several outcomes, including hospitalization, ICU admission, and death, these data may be incomplete because outcomes are not yet known at the time of reporting (i.e., outcomes coded as _Unknown_). These data elements also may not represent final outcomes, as a patient’s condition may have changed after case data submission but the case report was not updated.
 
