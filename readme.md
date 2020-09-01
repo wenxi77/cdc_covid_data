@@ -6,14 +6,15 @@ You have been granted access to this repository and data contained within this r
 
 ## Project organization
 
-Current and historical releases are stored in the [data](./data) folder. The most recent release is from July.
+Current and historical releases are stored in the [data](./data) folder.
 
 ```bash
 ├── data
 │   ├── COVID_Cases_Restricted_Detailed_05172020.csv.zip            <-315,593 records, 29 fields
 │   ├── COVID_Cases_Restricted_Detailed_05292020.csv.zip            <-1,111,017 records, 29 fields
 │   ├── COVID_Cases_Restricted_Detailed_06272020.csv.zip            <-1,773,087 records, 31 fields
-│   └── COVID_Cases_Restricted_Detailed_07312020.csv.zip            <-2,668,175 records, 31 fields
+│   ├── COVID_Cases_Restricted_Detailed_07312020.csv.zip            <-2,668,175 records, 31 fields
+│   └── COVID_Cases_Restricted_Detailed_08312020.csv.zip            <-3,704,922 records, 31 fields
 ├── COVID Case Surveillance Data Release Summary_6.27.2020.pdf
 ├── Case Surveillance Data RIDURA between SRRG and non-CDC entity.pdf
 ├── data_dictionary_covid_cases_restricted_detailed.xlsx
@@ -24,7 +25,7 @@ Current and historical releases are stored in the [data](./data) folder. The mos
 
 ## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, May 2020 U.S. Centers for Disease Control and Prevention
 
-_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: July 31, 2020)._
+_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: August 31, 2020)._
 
 ## Purpose
 
@@ -41,7 +42,7 @@ The Case Surveillance Task Force and Surveillance Review and Response Group (SRR
 * To initiate a request, please use the following "ASK SRRG" email address to contact data stewards: [eocevent394@cdc.gov](mailto:eocevent394@cdc.gov).
 * SRRG will provide further documentation and guidance under the RIDURA to access and use COVID-19 case surveillance data appropriately.
 * Data requests will be prioritized based a clear description of the immediate impact for COVID-19 response that is anticipated to follow from data use.
-* Access will be granted to the appropriate single repository containing data files and data dictionary through <https://github.com/cdc-data>
+* Access will be granted to the appropriate single repository containing data files and data dictionary through <https://github.com/cdc-data>.
 
 ## Restricted Data Specifications
 
