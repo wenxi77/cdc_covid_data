@@ -15,6 +15,7 @@ Current and historical releases are stored in the [data](./data) folder.
 │   ├── COVID_Cases_Restricted_Detailed_06272020.csv.zip            <-1,773,087 records, 31 fields
 │   ├── COVID_Cases_Restricted_Detailed_07312020.csv.zip            <-2,668,175 records, 31 fields
 │   └── COVID_Cases_Restricted_Detailed_08312020.csv.zip            <-3,704,922 records, 31 fields
+│   └── COVID_Cases_Restricted_Detailed_09302020.csv.zip            <-4,481,062 records, 31 fields
 ├── COVID Case Surveillance Data Release Summary_6.27.2020.pdf
 ├── Case Surveillance Data RIDURA between SRRG and non-CDC entity.pdf
 ├── data_dictionary_covid_cases_restricted_detailed.xlsx
@@ -23,9 +24,9 @@ Current and historical releases are stored in the [data](./data) folder.
 └── readme.md
 ```
 
-## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, May 2020 U.S. Centers for Disease Control and Prevention
+## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, September 2020 U.S. Centers for Disease Control and Prevention
 
-_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: August 31, 2020)._
+_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: September 30, 2020)._
 
 ## Purpose
 
