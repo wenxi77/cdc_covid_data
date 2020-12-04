@@ -17,8 +17,9 @@ Current and historical releases are stored in the [data](./data) folder.
 │   └── COVID_Cases_Restricted_Detailed_08312020.csv.zip            <-3,704,922 records, 31 fields
 │   └── COVID_Cases_Restricted_Detailed_09302020.csv.zip            <-4,481,062 records, 31 fields
 │   └── COVID_Cases_Restricted_Detailed_10312020.csv.zip            <-5,760,066 records, 31 fields 
-├── COVID Case Surveillance Data Release Summary_6.27.2020.pdf
-├── Case Surveillance Data RIDURA between SRRG and non-CDC entity.pdf
+│   └── COVID_Cases_Restricted_Detailed_12042020.csv.zip            <-8,405,079 records, 31 fields 
+├── covid_case_surveillance_data_release_summary.pdf
+├── case_surveillance_data_RIDURA.pdf
 ├── data_dictionary_covid_cases_restricted_detailed.xlsx
 ├── nCoV_PUI_Case_ReportForm_2020Apr13v2.pdf
 ├── nCoV_PUI_Case_ReportForm_accessed_2020May15.pdf
