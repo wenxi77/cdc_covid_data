@@ -26,9 +26,9 @@ Current and historical releases are stored in the [data](./data) folder.
 └── readme.md
 ```
 
-## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, October 2020 U.S. Centers for Disease Control and Prevention
+## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, November 2020 U.S. Centers for Disease Control and Prevention
 
-_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: October 31, 2020)._
+_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: December 04, 2020)._
 
 ## Purpose
 
