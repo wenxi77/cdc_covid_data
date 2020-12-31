@@ -8,7 +8,8 @@ You have been granted access to this repository and data contained within this r
 
 Current and historical releases are stored in the [data](./data) folder.
 
-```bash
+## Please note that the data file for December 2020 is over 100M. The file is split into two parts as noted below. Please unzip both files and combine them for your analysis.
+```
 ├── data
 │   ├── COVID_Cases_Restricted_Detailed_05172020.csv.zip            <-315,593 records, 29 fields
 │   ├── COVID_Cases_Restricted_Detailed_05292020.csv.zip            <-1,111,017 records, 29 fields
@@ -18,6 +19,9 @@ Current and historical releases are stored in the [data](./data) folder.
 │   └── COVID_Cases_Restricted_Detailed_09302020.csv.zip            <-4,481,062 records, 31 fields
 │   └── COVID_Cases_Restricted_Detailed_10312020.csv.zip            <-5,760,066 records, 31 fields 
 │   └── COVID_Cases_Restricted_Detailed_12042020.csv.zip            <-8,405,079 records, 31 fields 
+|   └── COVID_Cases_Restricted_Detailed_12312020_Part_1.csv.zip     
+|   └── COVID_Cases_Restricted_Detailed_12312020_Part_2.csv.zip     
+|                                                                   <-Part 1 and Part 2 Files contains 13,415,836 records, 32 fields
 ├── covid_case_surveillance_data_release_summary.pdf
 ├── case_surveillance_data_RIDURA.pdf
 ├── data_dictionary_covid_cases_restricted_detailed.xlsx
@@ -26,7 +30,7 @@ Current and historical releases are stored in the [data](./data) folder.
 └── readme.md
 ```
 
-## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, November 2020 U.S. Centers for Disease Control and Prevention
+## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, December 2020 U.S. Centers for Disease Control and Prevention
 
 _Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: December 04, 2020)._
 
