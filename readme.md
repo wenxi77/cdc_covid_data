@@ -56,7 +56,7 @@ The Case Surveillance Task Force and Surveillance Review and Response Group (SRR
 A restricted access, detailed version of line-listed dataset of all COVID-19 cases reported to CDC is available. The dataset is to be made available for limited use upon completion of the RIDURA. COVID-19 data may differ substantially in the variables reported and in completeness by state. Some data are suppressed to protect patient privacy by coding as _NA_ (see Data Suppression below). The **restricted access** data set includes the following variables:
 
 * The earlier of the Clinical Date
-* Initial report date of case to CDC (Deprecated use the earlier of the Clinical Date)
+* Initial report date of case to CDC (Deprecated, use the earlier of the Clinical Date)
 * Date of first positive specimen collection
 * Symptom onset date, if symptomatic
 * Case status
