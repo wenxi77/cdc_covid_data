@@ -32,7 +32,7 @@ Current and historical releases are stored in the [data](./data) folder.
 
 ## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, December 2020 U.S. Centers for Disease Control and Prevention
 
-_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: December 04, 2020)._
+_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: December 31, 2020)._
 
 ## Purpose
 
@@ -55,7 +55,8 @@ The Case Surveillance Task Force and Surveillance Review and Response Group (SRR
 
 A restricted access, detailed version of line-listed dataset of all COVID-19 cases reported to CDC is available. The dataset is to be made available for limited use upon completion of the RIDURA. COVID-19 data may differ substantially in the variables reported and in completeness by state. Some data are suppressed to protect patient privacy by coding as _NA_ (see Data Suppression below). The **restricted access** data set includes the following variables:
 
-* Initial report date of case to CDC
+* The earlier of the Clinical Date
+* Initial report date of case to CDC (Deprecated use the earlier of the Clinical Date)
 * Date of first positive specimen collection
 * Symptom onset date, if symptomatic
 * Case status
@@ -81,7 +82,8 @@ throat, cough, shortness of breath, nausea/vomiting, headache, abdominal pain, d
 
 A public version of line-listed dataset of all COVID-19 cases reported to CDC is available at [data.cdc.gov](https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf). Completion of the RIDURA is not required. COVID-19 data may differ substantially in the variables reported and in completeness by state. Some data are suppressed to protect patient privacy by coding as _NA_ (see Data Suppression below). The **public** data set includes the following variables:
 
-* Initial case report date to CDC
+* The earlier of the Clinical Date
+* Initial case report date to CDC (Deprecated, use the earlier of the Clinical Date)
 * Date of first positive specimen collection
 * Symptom onset date, if symptomatic
 * Case status
