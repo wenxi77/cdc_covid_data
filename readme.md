@@ -10,6 +10,8 @@ Current and historical releases are stored in the [data](./data) folder.
 
 ## Please note that the data file for December 2020 is over 100M. The file is split into two parts as noted below. Please unzip both files and combine them for your analysis.
 ```
+├── batch
+│   ├── Merge_MultipleCSV_OneCSV.bat            		    <-Batch/command prompt code to combine Multiple csv files to One CSV file.
 ├── data
 │   ├── COVID_Cases_Restricted_Detailed_05172020.csv.zip            <-315,593 records, 29 fields
 │   ├── COVID_Cases_Restricted_Detailed_05292020.csv.zip            <-1,111,017 records, 29 fields
@@ -19,9 +21,18 @@ Current and historical releases are stored in the [data](./data) folder.
 │   └── COVID_Cases_Restricted_Detailed_09302020.csv.zip            <-4,481,062 records, 31 fields
 │   └── COVID_Cases_Restricted_Detailed_10312020.csv.zip            <-5,760,066 records, 31 fields 
 │   └── COVID_Cases_Restricted_Detailed_12042020.csv.zip            <-8,405,079 records, 31 fields 
-|   └── COVID_Cases_Restricted_Detailed_12312020_Part_1.csv.zip     
-|   └── COVID_Cases_Restricted_Detailed_12312020_Part_2.csv.zip     
-|                                                                   <-Part 1 and Part 2 Files contains 13,415,836 records, 32 fields
+│   └── COVID_Cases_Restricted_Detailed_12312020_Part_1.csv.zip     
+│   └── COVID_Cases_Restricted_Detailed_12312020_Part_2.csv.zip     
+│                                                                   <-Part 1 and Part 2 Files contains 13,415,836 records, 32 fields
+│   └── COVID_Cases_Restricted_Detailed_01312021_Part_1.csv.zip     
+│   └── COVID_Cases_Restricted_Detailed_01312021_Part_2.csv.zip     
+│   └── COVID_Cases_Restricted_Detailed_01312021_Part_3.csv.zip     
+│                                                                   <-Part 1, Part 2 and Part 3 Files contains 18,379,871 records, 32 fields
+├── python
+│   ├── Merge_MultipleCSV_OneCSV.py            		        <-Python code to combine Multiple csv files to One CSV file.
+├── R
+│   ├── Merge_MultipleCSV_oneCSV.R            		        <-R code to combine Multiple csv files to One CSV file.
+│
 ├── covid_case_surveillance_data_release_summary.pdf
 ├── case_surveillance_data_RIDURA.pdf
 ├── data_dictionary_covid_cases_restricted_detailed.xlsx
