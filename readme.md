@@ -8,7 +8,7 @@ You have been granted access to this repository and data contained within this r
 
 Current and historical releases are stored in the [data](./data) folder.
 
-## Please note that we added new data file format Parquet, both Parquest and CSV files are identical. The CSV data file for February 2021 is over 100MB size. Therefore, the file had to be split into three parts as noted below. Each file has the first record as the column header. Please unzip all three files and combine them for your analysis. I have provided three different software tools to combine this data into one file in the following directories: Batch, Python and R.  You only have to use one of these three tools, as each will provide the same functionality.
+## Please note that we added new data file format Parquet, both Parquet and CSV files are identical. The CSV data file for February 2021 is over 100MB size. Therefore, the file had to be split into three parts as noted below. Each file has the first record as the column header. Please unzip all three files and combine them for your analysis. I have provided three different software tools to combine this data into one file in the following directories: Batch, Python and R.  You only have to use one of these three tools, as each will provide the same functionality.
 ```
 ├── batch
 │   ├── Merge_MultipleCSV_OneCSV.bat            		    <-Batch/command prompt code to combine Multiple csv files to One CSV file.
