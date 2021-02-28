@@ -30,4 +30,4 @@ str(data)
 data$X <- NULL
 head(data)
 
-write.csv(data,"C:/Temp/Ntest/github_test_merge.csv",na="NA",row.names=TRUE)
+write.csv(data,"C:/Temp/Ntest/github_test_merge.csv",na="NA",row.names=FALSE)

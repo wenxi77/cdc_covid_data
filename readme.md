@@ -8,7 +8,7 @@ You have been granted access to this repository and data contained within this r
 
 Current and historical releases are stored in the [data](./data) folder.
 
-## Please note that the data file for January 2021 is over 100MB size. Therefore, the file had to be split into three parts as noted below. Each file has the first record as the column header. Please unzip all three files and combine them for your analysis. I have provided three different software tools to combine this data into one file in the following directories: Batch, Python and R.  You only have to use one of these three tools, as each will provide the same functionality.
+## Please note that we added new data file format Parquet, both Parquest and CSV files are identical. The CSV data file for February 2021 is over 100MB size. Therefore, the file had to be split into three parts as noted below. Each file has the first record as the column header. Please unzip all three files and combine them for your analysis. I have provided three different software tools to combine this data into one file in the following directories: Batch, Python and R.  You only have to use one of these three tools, as each will provide the same functionality.
 ```
 ├── batch
 │   ├── Merge_MultipleCSV_OneCSV.bat            		    <-Batch/command prompt code to combine Multiple csv files to One CSV file.
@@ -28,6 +28,14 @@ Current and historical releases are stored in the [data](./data) folder.
 │   └── COVID_Cases_Restricted_Detailed_01312021_Part_2.csv.zip     
 │   └── COVID_Cases_Restricted_Detailed_01312021_Part_3.csv.zip     
 │                                                                   <-Part 1, Part 2 and Part 3 Files contains 18,379,871 records, 32 fields
+│   └── COVID_Cases_Restricted_Detailed_02282021_Part_1.csv.zip     
+│   └── COVID_Cases_Restricted_Detailed_02282021_Part_2.csv.zip     
+│   └── COVID_Cases_Restricted_Detailed_02282021_Part_3.csv.zip     
+│                                                                   <-Part 1, Part 2 and Part 3 Files contains 20,565,345 records, 32 fields
+│
+│   └── part-00000-071bf023-ab53-4b04-9dd0-167a49db8a45-c000.snappy_02282021.zip  <- New data file format - Parquet - Files contains 20,565,345 records, 32 fields
+│
+│
 ├── python
 │   ├── Merge_MultipleCSV_OneCSV.py            		        <-Python code to combine Multiple csv files to One CSV file.
 ├── R
@@ -66,8 +74,8 @@ The Case Surveillance Task Force and Surveillance Review and Response Group (SRR
 
 A restricted access, detailed version of line-listed dataset of all COVID-19 cases reported to CDC is available. The dataset is to be made available for limited use upon completion of the RIDURA. COVID-19 data may differ substantially in the variables reported and in completeness by state. Some data are suppressed to protect patient privacy by coding as _NA_ (see Data Suppression below). The **restricted access** data set includes the following variables:
 
-* The earlier of the Clinical Date
-* Initial report date of case to CDC (Deprecated, use the earlier of the Clinical Date)
+* The earlier of the Clinical Date:Cdc_case_earliest_dt uses the best available date from both cdc_received_dt and cdc_clinical_obs_dt and is an option to end-users who need a date variable with optimized completeness. The logic of cdc_case_earliest_dt is to use the non-null date of one variable when the other is null and to use the earliest valid date when both dates are available.
+* Initial report date of case to CDC (Deprecated, use the earlier of the Clinical Date): This date was populated using the date at which a case record was first submitted to the database. If missing, then the report date entered on the case report form was used. If missing, then the date at which the case first appeared in the database was used.
 * Date of first positive specimen collection
 * Symptom onset date, if symptomatic
 * Case status
