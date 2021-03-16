@@ -33,7 +33,7 @@ Current and historical releases are stored in the [data](./data) folder.
 │   └── COVID_Cases_Restricted_Detailed_02282021_Part_3.csv.zip     
 │                                                                   <-Part 1, Part 2 and Part 3 Files contains 20,565,345 records, 32 fields
 │
-│   └── COVID_Cases_Restricted_Details_02282021.zip  <- New data file format - Parquet - Files contains 20,565,345 records, 32 fields
+│   └── COVID_Cases_Restricted_Details_02282021.parquet.zip  <- New data file format - Parquet - Files contains 20,565,345 records, 32 fields
 │
 │
 ├── python
