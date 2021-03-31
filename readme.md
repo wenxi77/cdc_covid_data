@@ -36,8 +36,10 @@ Current and historical releases are stored in the [data](./data) folder.
 │   └── COVID_Cases_Restricted_Detailed_03312021_Part_2.csv.zip     
 │   └── COVID_Cases_Restricted_Detailed_03312021_Part_3.csv.zip     
 │                                                                   <-Part 1, Part 2 and Part 3 Files contains 22,507,139 records, 32 fields│
-│   └── COVID_Cases_Restricted_Details_03312021.parquet.zip  <- New data file format - Parquet - Files contains 22,507,139 records, 32 fields
-│
+│   └── COVID_Cases_Restricted_Details_03312021_Part_1.parquet.zip  
+│   └── COVID_Cases_Restricted_Details_03312021_Part_1.parquet.zip
+│   └── COVID_Cases_Restricted_Details_03312021_Part_1.parquet.zip
+│								    <- New data file format - Parquet - Files contains 22,507,139 records, 32 fields
 │
 ├── python
 │   ├── Merge_MultipleCSV_OneCSV.py            		        <-Python code to combine Multiple csv files to One CSV file.
