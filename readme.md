@@ -8,7 +8,7 @@ You have been granted access to this repository and data contained within this r
 
 Current and historical releases are stored in the [data](./data) folder.
 
-## Please note that we added new data file format Parquet, both Parquet and CSV files are identical. The CSV data file for February 2021 is over 100MB size. Therefore, the file had to be split into three parts as noted below. Each file has the first record as the column header. Please unzip all three files and combine them for your analysis. I have provided three different software tools to combine this data into one file in the following directories: Batch, Python and R.  You only have to use one of these three tools, as each will provide the same functionality.
+## Please note that we added new data file format Parquet, both Parquet and CSV files are identical. The CSV data file for March 2021 is over 100MB size. Therefore, the file had to be split into three parts as noted below. Each file has the first record as the column header. Please unzip all three files and combine them for your analysis. I have provided three different software tools to combine this data into one file in the following directories: Batch, Python and R.  You only have to use one of these three tools, as each will provide the same functionality.
 ```
 ├── batch
 │   ├── Merge_MultipleCSV_OneCSV.bat            		    <-Batch/command prompt code to combine Multiple csv files to One CSV file.
@@ -32,9 +32,14 @@ Current and historical releases are stored in the [data](./data) folder.
 │   └── COVID_Cases_Restricted_Detailed_02282021_Part_2.csv.zip     
 │   └── COVID_Cases_Restricted_Detailed_02282021_Part_3.csv.zip     
 │                                                                   <-Part 1, Part 2 and Part 3 Files contains 20,565,345 records, 32 fields
-│
-│   └── COVID_Cases_Restricted_Details_02282021.parquet.zip  <- New data file format - Parquet - Files contains 20,565,345 records, 32 fields
-│
+│   └── COVID_Cases_Restricted_Detailed_03312021_Part_1.csv.zip     
+│   └── COVID_Cases_Restricted_Detailed_03312021_Part_2.csv.zip     
+│   └── COVID_Cases_Restricted_Detailed_03312021_Part_3.csv.zip     
+│                                                                   <-Part 1, Part 2 and Part 3 Files contains 22,507,139 records, 32 fields│
+│   └── COVID_Cases_Restricted_Details_03312021_Part_1.parquet.zip 
+│   └── COVID_Cases_Restricted_Details_03312021_Part_2.parquet.zip
+│   └── COVID_Cases_Restricted_Details_03312021_Part_3.parquet.zip 
+│								    <- New data file format - Parquet - Files contains 22,507,139 records, 32 fields
 │
 ├── python
 │   ├── Merge_MultipleCSV_OneCSV.py            		        <-Python code to combine Multiple csv files to One CSV file.
