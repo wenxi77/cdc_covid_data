@@ -30,12 +30,16 @@ Current and historical releases are stored in the [data](./data) folder.
 │                                                                   <-Part 1, Part 2 and Part 3 Files contains 18,379,871 records, 32 fields
 │   └── COVID_Cases_Restricted_Detailed_02282021_Part_1.csv.zip     
 │   └── COVID_Cases_Restricted_Detailed_02282021_Part_2.csv.zip     
-│   └── COVID_Cases_Restricted_Detailed_02282021_Part_3.csv.zip     
-│                                                                   <-Part 1, Part 2 and Part 3 Files contains 20,565,345 records, 32 fields
+│   └── COVID_Cases_Restricted_Detailed_02282021_Part_3.csv.zip    
+│                                                                   <-Part 1, Part 2 and Part 3 Files contains 20,565,345 records, 32 fields 
+│   └── COVID_Cases_Restricted_Details_02282021.parquet.zip
+│								    <- New data file format - Parquet - Files contains 20,565,345 records, 32 fields
+│                                                                   
 │   └── COVID_Cases_Restricted_Detailed_03312021_Part_1.csv.zip     
 │   └── COVID_Cases_Restricted_Detailed_03312021_Part_2.csv.zip     
 │   └── COVID_Cases_Restricted_Detailed_03312021_Part_3.csv.zip     
 │                                                                   <-Part 1, Part 2 and Part 3 Files contains 22,507,139 records, 32 fields
+
 │   └── COVID_Cases_Restricted_Details_03312021_Part_1.parquet.zip  
 │   └── COVID_Cases_Restricted_Details_03312021_Part_2.parquet.zip
 │   └── COVID_Cases_Restricted_Details_03312021_Part_3.parquet.zip
