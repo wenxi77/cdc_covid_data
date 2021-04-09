@@ -1,8 +1,17 @@
 # COVID-19 Case Surveillance Restricted Use Detailed Data
 
-This private repository is created to assist qualified researchers in using COVID-19 Case Surveillance Data.
+Thank you for completing the registration process to access the COVID-19 Case Surveillance Restricted Access Detailed Data. This data set has been created to assist authorized users in their use of these data.  You have been granted access to this data set and data contained within it. 
 
-You have been granted access to this repository and data contained within this repository after accepting to the RIDURA. Please direct others who would like access to these data toward the [AskSRRG Mailbox](mailto:eocevent394@cdc.gov) so they can request access. Please ask questions to this same mailbox, or by submitting an [Issue on this repository](https://github.com/cdc-data/covid_case_restricted_detail/issues).
+Before you access the data set, we would like to remind you to review the terms of the Data Use Restrictions Agreement (DUA) that you have agreed to comply with, particularly the following:
+* While matching cases for public health purposes is acceptable, you will not deliberately participate in or support the combination of case surveillance datasets with other datasets for the specific purpose of matching records to identify individuals.
+* While no direct identifiers or characteristics that might lead to identification have been included in the data provided, you agree to not use the data to re-identify or attempt to re-identify any individual included in the data and will not use, publish or release the data in any personally identifiable form.
+
+CDC appreciates the goal and the need to share timely and accurate COVID-19 data but seeks to balance ensuring individual privacy and assessing the risks of potential disclosure and/or reidentification. As such, we appreciate your agreement to abide with the terms of the DUA. Please let us know if you have any additional questions.
+
+Your initial access has been granted for a period of 45 days. Should you need access beyond 45 days, contact AskSRRG Mailbox to request an extension for an additional 45 days. Extensions beyond 90 days may be considered based on the purpose of analysis.  
+
+Please direct others who would like access to these data to [COVID-19 Case Surveillance Restricted Access Detailed Data](https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Restricted-Access-Detai/mbd7-r32t). Please submit all questions to [AskSRRG Mailbox](mailto:eocevent394@cdc.gov) or by submitting an [Issue on this repository](https://github.com/cdc-data/covid_case_restricted_detail/issues).
+
 
 ## Project organization
 
