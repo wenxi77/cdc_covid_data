@@ -1,5 +1,5 @@
 # COVID-19 Case Surveillance Restricted Use Detailed Data
-
+## NOTE: April data files downloaded prior to 5:00 pm ET on 4/30/2021 are considered incomplete and should be discarded.
 Thank you for completing the registration process to access the COVID-19 Case Surveillance Restricted Access Detailed Data. This data set has been created to assist authorized users in their use of these data.  You have been granted access to this data set and data contained within it. 
 
 Before you access the data set, we would like to remind you to review the terms of the Data Use Restrictions Agreement (DUA) that you have agreed to comply with, particularly the following:
