@@ -22,38 +22,39 @@ Current and historical releases are stored in the [data](./data) folder.
 ├── batch
 │   ├── Merge_MultipleCSV_OneCSV.bat            		    <-Batch/command prompt code to combine Multiple csv files to One CSV file.
 ├── data
-│   ├── COVID_Cases_Restricted_Detailed_05172020.csv.zip            <-315,593 records, 29 fields
-│   ├── COVID_Cases_Restricted_Detailed_05292020.csv.zip            <-1,111,017 records, 29 fields
-│   ├── COVID_Cases_Restricted_Detailed_06272020.csv.zip            <-1,773,087 records, 31 fields
-│   ├── COVID_Cases_Restricted_Detailed_07312020.csv.zip            <-2,668,175 records, 31 fields
-│   └── COVID_Cases_Restricted_Detailed_08312020.csv.zip            <-3,704,922 records, 31 fields
-│   └── COVID_Cases_Restricted_Detailed_09302020.csv.zip            <-4,481,062 records, 31 fields
-│   └── COVID_Cases_Restricted_Detailed_10312020.csv.zip            <-5,760,066 records, 31 fields 
-│   └── COVID_Cases_Restricted_Detailed_12042020.csv.zip            <-8,405,079 records, 31 fields 
-│   └── COVID_Cases_Restricted_Detailed_12312020_Part_1.csv.zip     
-│   └── COVID_Cases_Restricted_Detailed_12312020_Part_2.csv.zip     
-│                                                                   <-Part 1 and Part 2 Files contains 13,415,836 records, 32 fields
-│   └── COVID_Cases_Restricted_Detailed_01312021_Part_1.csv.zip     
-│   └── COVID_Cases_Restricted_Detailed_01312021_Part_2.csv.zip     
-│   └── COVID_Cases_Restricted_Detailed_01312021_Part_3.csv.zip     
-│                                                                   <-Part 1, Part 2 and Part 3 Files contains 18,379,871 records, 32 fields
-│   └── COVID_Cases_Restricted_Detailed_02282021_Part_1.csv.zip     
-│   └── COVID_Cases_Restricted_Detailed_02282021_Part_2.csv.zip     
-│   └── COVID_Cases_Restricted_Detailed_02282021_Part_3.csv.zip    
-│                                                                   <-Part 1, Part 2 and Part 3 Files contains 20,565,345 records, 32 fields 
-│   └── COVID_Cases_Restricted_Details_02282021.parquet.zip
-│								    <- New data file format - Parquet - Files contains 20,565,345 records, 32 fields
+│   	├── 04302021 
+│   		├── COVID_Cases_Restricted_Detailed_05172020.csv.zip            <-315,593 records, 29 fields
+│   		├── COVID_Cases_Restricted_Detailed_05292020.csv.zip            <-1,111,017 records, 29 fields
+│  	 	├── COVID_Cases_Restricted_Detailed_06272020.csv.zip            <-1,773,087 records, 31 fields
+│   		├── COVID_Cases_Restricted_Detailed_07312020.csv.zip            <-2,668,175 records, 31 fields
+│   		└── COVID_Cases_Restricted_Detailed_08312020.csv.zip            <-3,704,922 records, 31 fields
+│   		└── COVID_Cases_Restricted_Detailed_09302020.csv.zip            <-4,481,062 records, 31 fields
+│  		└── COVID_Cases_Restricted_Detailed_10312020.csv.zip            <-5,760,066 records, 31 fields 
+│   		└── COVID_Cases_Restricted_Detailed_12042020.csv.zip            <-8,405,079 records, 31 fields 
+│   		└── COVID_Cases_Restricted_Detailed_12312020_Part_1.csv.zip     
+│   		└── COVID_Cases_Restricted_Detailed_12312020_Part_2.csv.zip     
+│                                                                   		<-Part 1 and Part 2 Files contains 13,415,836 records, 32 fields
+│   		└── COVID_Cases_Restricted_Detailed_01312021_Part_1.csv.zip     
+│   		└── COVID_Cases_Restricted_Detailed_01312021_Part_2.csv.zip     
+│   		└── COVID_Cases_Restricted_Detailed_01312021_Part_3.csv.zip     
+│                                                                  		 <-Part 1, Part 2 and Part 3 Files contains 18,379,871 records, 32 fields
+│  		└── COVID_Cases_Restricted_Detailed_02282021_Part_1.csv.zip     
+│   		└── COVID_Cases_Restricted_Detailed_02282021_Part_2.csv.zip     
+│   		└── COVID_Cases_Restricted_Detailed_02282021_Part_3.csv.zip    
+│                                                                   		<-Part 1, Part 2 and Part 3 Files contains 20,565,345 records, 32 fields 
+│   		└── COVID_Cases_Restricted_Details_02282021.parquet.zip
+│								   		 <- New data file format - Parquet - Files contains 20,565,345 records, 32 fields
 │                                                                   
-│   └── COVID_Cases_Restricted_Detailed_03312021_Part_1.csv.zip     
-│   └── COVID_Cases_Restricted_Detailed_03312021_Part_2.csv.zip     
-│   └── COVID_Cases_Restricted_Detailed_03312021_Part_3.csv.zip     
-│                                                                   <-Part 1, Part 2 and Part 3 Files contains 22,507,139 records, 32 fields
+│   		└── COVID_Cases_Restricted_Detailed_03312021_Part_1.csv.zip     
+│   		└── COVID_Cases_Restricted_Detailed_03312021_Part_2.csv.zip     
+│  		└── COVID_Cases_Restricted_Detailed_03312021_Part_3.csv.zip     
+│                                                                   		<-Part 1, Part 2 and Part 3 Files contains 22,507,139 records, 32 fields
 │
-│   └── COVID_Cases_Restricted_Details_03312021_Part_1.parquet.zip  
-│   └── COVID_Cases_Restricted_Details_03312021_Part_2.parquet.zip
-│   └── COVID_Cases_Restricted_Details_03312021_Part_3.parquet.zip
-│								    <- New data file format - Parquet - Part 1, Part 2 and Part 3 Files contains 22,507,139 records, 32 fields
-│   ├── 04302021                                                                 
+│   		└── COVID_Cases_Restricted_Details_03312021_Part_1.parquet.zip  
+│   		└── COVID_Cases_Restricted_Details_03312021_Part_2.parquet.zip
+│  		└── COVID_Cases_Restricted_Details_03312021_Part_3.parquet.zip
+│								    		<- New data file format - Parquet - Part 1, Part 2 and Part 3 Files contains 22,507,139 records, 32 fields
+│                                                                   
 │   		└── COVID_Cases_Restricted_Detailed_04302021_Part_1.csv.zip     
 │   		└── COVID_Cases_Restricted_Detailed_04302021_Part_2.csv.zip     
 │   		└── COVID_Cases_Restricted_Detailed_04302021_Part_3.csv.zip     
