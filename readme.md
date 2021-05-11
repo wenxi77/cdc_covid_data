@@ -1,5 +1,5 @@
 # COVID-19 Case Surveillance Restricted Use Detailed Data
-## NOTE: April data files downloaded prior to 5:00 pm ET on 4/30/2021 are considered incomplete and should be discarded.
+
 Thank you for completing the registration process to access the COVID-19 Case Surveillance Restricted Access Detailed Data. This data set has been created to assist authorized users in their use of these data.  You have been granted access to this data set and data contained within it. 
 
 Before you access the data set, we would like to remind you to review the terms of the Data Use Restrictions Agreement (DUA) that you have agreed to comply with, particularly the following:
@@ -12,76 +12,68 @@ Your initial access has been granted for a period of 45 days. Should you need ac
 
 Please direct others who would like access to these data to [COVID-19 Case Surveillance Restricted Access Detailed Data](https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Restricted-Access-Detai/mbd7-r32t). Please submit all questions to [AskSRRG Mailbox](mailto:eocevent394@cdc.gov) or by submitting an [Issue on this repository](https://github.com/cdc-data/covid_case_restricted_detail/issues).
 
-
 ## Project organization
 
 Current and historical releases are stored in the [data](./data) folder.
 
-## Please note that we added new data file format Parquet, both Parquet and CSV files are identical. The CSV and parquet data file since March 2021 is over 100MB size. Therefore, the files had to be split into three parts as noted below. Each file has the first record as the column header. Please unzip all three files and combine them for your analysis. I have provided three different software tools to combine this data into one file in the following directories: Batch, Python and R.  You only have to use one of these three tools, as each will provide the same functionality.
+_Please note that we added new data file format Parquet, both Parquet and CSV files are identical. The CSV and parquet data file since March 2021 is over 100MB size. Therefore, the files had to be split into three parts as noted below. Each file has the first record as the column header. Please unzip all three files and combine them for your analysis. I have provided three different software tools to combine this data into one file in the following directories: Batch, Python and R.  You only have to use one of these three tools, as each will provide the same functionality._
 ```
 ├── batch
-│   ├── Merge_MultipleCSV_OneCSV.bat            		    <-Batch/command prompt code to combine Multiple csv files to One CSV file.
+│   └── Merge_MultipleCSV_OneCSV.bat            		    <-Batch/command prompt code to combine Multiple csv files to One CSV file.
 ├── data
-│   	├── 04302021 
-│   		├── COVID_Cases_Restricted_Detailed_05172020.csv.zip            <-315,593 records, 29 fields
-│   		├── COVID_Cases_Restricted_Detailed_05292020.csv.zip            <-1,111,017 records, 29 fields
-│  	 	├── COVID_Cases_Restricted_Detailed_06272020.csv.zip            <-1,773,087 records, 31 fields
-│   		├── COVID_Cases_Restricted_Detailed_07312020.csv.zip            <-2,668,175 records, 31 fields
-│   		└── COVID_Cases_Restricted_Detailed_08312020.csv.zip            <-3,704,922 records, 31 fields
-│   		└── COVID_Cases_Restricted_Detailed_09302020.csv.zip            <-4,481,062 records, 31 fields
-│  		└── COVID_Cases_Restricted_Detailed_10312020.csv.zip            <-5,760,066 records, 31 fields 
-│   		└── COVID_Cases_Restricted_Detailed_12042020.csv.zip            <-8,405,079 records, 31 fields 
-│   		└── COVID_Cases_Restricted_Detailed_12312020_Part_1.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_12312020_Part_2.csv.zip     
-│                                                                   		<-Part 1 and Part 2 Files contains 13,415,836 records, 32 fields
-│   		└── COVID_Cases_Restricted_Detailed_01312021_Part_1.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_01312021_Part_2.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_01312021_Part_3.csv.zip     
-│                                                                  		 <-Part 1, Part 2 and Part 3 Files contains 18,379,871 records, 32 fields
-│  		└── COVID_Cases_Restricted_Detailed_02282021_Part_1.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_02282021_Part_2.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_02282021_Part_3.csv.zip    
-│                                                                   		<-Part 1, Part 2 and Part 3 Files contains 20,565,345 records, 32 fields 
-│   		└── COVID_Cases_Restricted_Details_02282021.parquet.zip
-│								   		 <- New data file format - Parquet - Files contains 20,565,345 records, 32 fields
-│                                                                   
-│   		└── COVID_Cases_Restricted_Detailed_03312021_Part_1.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_03312021_Part_2.csv.zip     
-│  		└── COVID_Cases_Restricted_Detailed_03312021_Part_3.csv.zip     
-│                                                                   		<-Part 1, Part 2 and Part 3 Files contains 22,507,139 records, 32 fields
-│
-│   		└── COVID_Cases_Restricted_Details_03312021_Part_1.parquet.zip  
-│   		└── COVID_Cases_Restricted_Details_03312021_Part_2.parquet.zip
-│  		└── COVID_Cases_Restricted_Details_03312021_Part_3.parquet.zip
-│								    		<- New data file format - Parquet - Part 1, Part 2 and Part 3 Files contains 22,507,139 records, 32 fields
-│                                                                   
-│   		└── COVID_Cases_Restricted_Detailed_04302021_Part_1.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_04302021_Part_2.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_04302021_Part_3.csv.zip     
-│                                                                   		<-Part 1, Part 2 and Part 3 Files contains 24,441,351 records, 32 fields│
-│  		└── COVID_Cases_Restricted_Details_04302021_Part_1.parquet.zip  
-│   		└── COVID_Cases_Restricted_Details_04302021_Part_2.parquet.zip
-│   		└── COVID_Cases_Restricted_Details_04302021_Part_3.parquet.zip
-│								    		<- New data file format - Parquet - Part 1, Part 2 and Part 3 Files contains 24,441,351 records, 32 fields
-│   ├── 05102021                                                                 
-│    	   	└── COVID_Cases_Restricted_Detailed_05102021_Part_1.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_05102021_Part_2.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_05102021_Part_3.csv.zip 
-│   		└── COVID_Cases_Restricted_Detailed_05102021_Part_4.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_05102021_Part_5.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_05102021_Part_6.csv.zip   
-│   		└── COVID_Cases_Restricted_Detailed_05102021_Part_7.csv.zip     
-│   		└── COVID_Cases_Restricted_Detailed_05102021_Part_8.csv.zip    
-│                                                                   		<-Part 1, Part 2, Part 3, Part 4, Part 5, Part 6, Part 7 and Part 8 Files contains 25,009,120 records, 32 fields│
-│   		└── COVID_Cases_Restricted_Details_05102021_Part_1.parquet.zip  
-│  		└── COVID_Cases_Restricted_Details_05102021_Part_2.parquet.zip
-│   		└── COVID_Cases_Restricted_Details_05102021_Part_3.parquet.zip
-│								    		<- New data file format - Parquet - Part 1, Part 2 and Part 3 Files contains 25,009,120 records, 32 fields
+│   ├── 2020-05-17 <- 315,593 records, 29 fields
+│   │ 	└── COVID_Cases_Restricted_Detailed_05172020.csv.zip            
+│   ├── 2020-05-29 <- 1,111,017 records, 29 fields
+│   │ 	└── COVID_Cases_Restricted_Detailed_05292020.csv.zip            
+│   ├── 2020-06-27 <- 1,773,087 records, 31 fields
+│   │ 	└── COVID_Cases_Restricted_Detailed_06272020.csv.zip    
+│   ├── 2020-07-31 <- 2,668,175 records, 31 fields        
+│   │ 	└── COVID_Cases_Restricted_Detailed_07312020.csv.zip            
+│   ├── 2020-08-31 <- 3,704,922 records, 31 fields
+│   │ 	└── COVID_Cases_Restricted_Detailed_08312020.csv.zip            
+│   ├── 2020-09-30 <- 4,481,062 records, 31 fields
+│   │ 	└── COVID_Cases_Restricted_Detailed_09302020.csv.zip            
+│   ├── 2020-10-31 <- 5,760,066 records, 31 fields 
+│   │ 	└── COVID_Cases_Restricted_Detailed_10312020.csv.zip            
+│   ├── 2020-12-04 <- 8,405,079 records, 31 fields 
+│   │ 	└── COVID_Cases_Restricted_Detailed_12042020.csv.zip            
+│   ├── 2020-12-31 <- 13,415,836 records, 32 fields
+│   │ 	├── COVID_Cases_Restricted_Detailed_12312020_Part_1.csv.zip     
+│   │ 	└── COVID_Cases_Restricted_Detailed_12312020_Part_2.csv.zip     
+│   ├── 2021-01-31 <- 18,379,871 records, 32 fields                                                      		
+│   │ 	├── COVID_Cases_Restricted_Detailed_01312021_Part_1.csv.zip     
+│   │ 	├── COVID_Cases_Restricted_Detailed_01312021_Part_2.csv.zip     
+│   │ 	└── COVID_Cases_Restricted_Detailed_01312021_Part_3.csv.zip     
+│   ├── 2021-02-28 <- 20,565,345 records, 32 fields (csv and parquet format)                                                              		 
+│   │ 	├── COVID_Cases_Restricted_Detailed_02282021_Part_1.csv.zip     
+│   │ 	├── COVID_Cases_Restricted_Detailed_02282021_Part_2.csv.zip     
+│   │ 	├── COVID_Cases_Restricted_Detailed_02282021_Part_3.csv.zip                                                             		
+│   │ 	└── COVID_Cases_Restricted_Details_02282021.parquet.zip 
+│   ├── 2021-03-31 <- 22,507,139 records, 32 fields (csv and parquet format) 			   		
+│   │ 	├── COVID_Cases_Restricted_Detailed_03312021_Part_1.csv.zip     
+│   │ 	├── COVID_Cases_Restricted_Detailed_03312021_Part_2.csv.zip     
+│   │ 	├── COVID_Cases_Restricted_Detailed_03312021_Part_3.csv.zip                                                          		
+│   │ 	├── COVID_Cases_Restricted_Details_03312021_Part_1.parquet.zip  
+│   │ 	├── COVID_Cases_Restricted_Details_03312021_Part_2.parquet.zip
+│   │ 	└── COVID_Cases_Restricted_Details_03312021_Part_3.parquet.zip
+│   ├── 2021-04-30 <- 24,441,351 records, 32 fields                                                                  
+│   │ 	├── COVID_Cases_Restricted_Detailed_04302021_Part_1.csv.zip     
+│   │ 	├── COVID_Cases_Restricted_Detailed_04302021_Part_2.csv.zip     
+│   │ 	├── COVID_Cases_Restricted_Detailed_04302021_Part_3.csv.zip   
+│   │ 	├── COVID_Cases_Restricted_Details_04302021_Part_1.parquet.zip  
+│   │ 	├── COVID_Cases_Restricted_Details_04302021_Part_2.parquet.zip
+│   │ 	└── COVID_Cases_Restricted_Details_04302021_Part_3.parquet.zip
+│   └── 2021-05-11 <- 25120922 records, 32 fields                                                        
+│     	├── COVID_Cases_Restricted_Detailed_05112021_Part_1.csv.zip     
+│   	├── COVID_Cases_Restricted_Detailed_05112021_Part_2.csv.zip     
+│   	├── COVID_Cases_Restricted_Detailed_05112021_Part_3.csv.zip 
+│   	├── COVID_Cases_Restricted_Detailed_05112021_Part_4.csv.zip                                                             		
+│   	├── COVID_Cases_Restricted_Details_05112021_Part_1.parquet 
+│  	└── COVID_Cases_Restricted_Details_05112021_Part_2.parquet				    		
 ├── python
-│   ├── Merge_MultipleCSV_OneCSV.py            		        <-Python code to combine Multiple csv files to One CSV file.
+│   └── Merge_MultipleCSV_OneCSV.py            		        <-Python code to combine Multiple csv files to One CSV file.
 ├── R
-│   ├── Merge_MultipleCSV_oneCSV.R            		        <-R code to combine Multiple csv files to One CSV file.
-│
+│   └── Merge_MultipleCSV_oneCSV.R            		        <-R code to combine Multiple csv files to One CSV file.
 ├── covid_case_surveillance_data_release_summary.pdf
 ├── case_surveillance_data_RIDURA.pdf
 ├── data_dictionary_covid_cases_restricted_detailed.xlsx
@@ -90,9 +82,9 @@ Current and historical releases are stored in the [data](./data) folder.
 └── readme.md
 ```
 
-## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response, December 2020 U.S. Centers for Disease Control and Prevention
+## COVID-19 Case Surveillance Data Access, Summary, Guidance, and Limitations Case Surveillance Task Force, CDC COVID-19 Response
 
-_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: March 31, 2021)._
+_Suggested Citation: Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Data Access, Summary, and Limitations (version date: May 11, 2021)._
 
 ## Purpose
 
