@@ -70,6 +70,8 @@ _Please note that we added new data file format Parquet, both Parquet and CSV fi
 │   	├── COVID_Cases_Restricted_Detailed_05112021_Part_4.csv.zip                                                             		
 │   	├── COVID_Cases_Restricted_Details_05112021_Part_1.parquet 
 │  	└── COVID_Cases_Restricted_Details_05112021_Part_2.parquet				    		
+├── report
+│   └── utility_summary_ridura.pdf    
 ├── python
 │   └── Merge_MultipleCSV_OneCSV.py            		        <-Python code to combine Multiple csv files to One CSV file.
 ├── R
